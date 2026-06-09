@@ -4,8 +4,8 @@ from telegram import Update
 from telegram.ext import Application, MessageHandler, filters, ContextTypes
 
 # ================== تنظیمات ==================
-TOKEN = "8563248229:AAHbclnc9O6hU4rLE9Cm8Ane9Vnzx6otUTc"
-TMDB_API_KEY = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmNjU2ZjA1NjdiZGMzYzI0NGIzOTUzNGZjNDE1NDkyOCIsIm5iZiI6MTc4MTAwMTg5Ny40NjMsInN1YiI6IjZhMjdlZWE5ZDVkNGFjYzk5YjExNjE4OCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.7JyhRDchSCoD5GgC7hCIM3qwMfbwAkQMNtYujcO1Vnw"
+TOKEN = os.getenv("BOT_TOKEN")
+TMDB_API_KEY = os.getenv("TMDB_API_KEY")
 
 # ============================================
 
