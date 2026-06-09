@@ -47,8 +47,8 @@ def get_tmdb_info(title):
 {genre_tags}
 """
         return output.strip()
-    except:
-        return "❌ خطا در دریافت اطلاعات. دوباره امتحان کن."
+    except Exception as e:
+        return f"❌ Error: {str(e)}"
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text = update.message.text.strip()
